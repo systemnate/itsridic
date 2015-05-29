@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  resources :newsletter, only: [:new, :create]
 
+  get 'pages/index'
   root 'pages#index'
+  get '/about', to: 'pages#about'
 end
