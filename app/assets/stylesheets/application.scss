@@ -18,11 +18,11 @@
 
 @font-face {
     font-family: 'Nervous';
-    src: url('/assets/Nervous.eot');
-    src: url('/assets/Nervous.eot?iefix') format('eot'),
-         url('/assets/Nervous.woff') format('woff'),
-         url('/assets/Nervous.ttf') format('truetype'),
-         url('/assets/Nervous.svg#webfont') format('svg');
+    src: font-url('Nervous.eot');
+    src: font-url('Nervous.eot?iefix') format('eot'),
+         font-url('Nervous.woff') format('woff'),
+         font-url('Nervous.ttf') format('truetype'),
+         font-url('Nervous.svg#webfont') format('svg');
 }
 
 
