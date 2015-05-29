@@ -17,9 +17,14 @@
 @import "bootstrap";
 
 @font-face {
-    font-family: "Nervous";
-    src: url('/assets/Nervous.ttf') format("truetype");
+    font-family: 'Nervous';
+    src: url('/assets/Nervous.eot');
+    src: url('/assets/Nervous.eot?iefix') format('eot'),
+         url('/assets/Nervous.woff') format('woff'),
+         url('/assets/Nervous.ttf') format('truetype'),
+         url('/assets/Nervous.svg#webfont') format('svg');
 }
+
 
 .row-centered {
     text-align:center;
