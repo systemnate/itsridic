@@ -959,11 +959,6 @@ a.accordion-toggle  i{
   text-align: center;
 }
 
-#partner h2, 
-#partner h3 {
-  color: #fff;
-}
-
 .partners ul {
   list-style: none;
   margin: 0;
@@ -1674,11 +1669,6 @@ ul.social_icons li  a i{
 .pricing-area span {
   font-weight: 700;
   font-size: 18px;
-}
-
-.pricing-area h3, 
-.pricing-area span  {
-  color: #fff;
 }
 
 .plan {
