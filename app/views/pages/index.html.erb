@@ -1,53 +1,138 @@
-<h1 class="welcome">Welcome To</h1>
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active caro-image">
+                    <div class="container">
 
-<div class="row">
-  <div class="span4"></div>
-  <div class="span4"><%= image_tag("ItsRidic2.png", class: "center-block img-responsive") %></div>
-  <div class="span4"></div>
-</div>
+                      <%= image_tag('ItsRidic2.png', class: "center-block img-responsive") %>
+                     
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
 
-<p class="large">
-  Welcome to It's Ridic!  This is the website about all products that are "ridic".<br/>  Check out the <%= link_to "About Us", about_path %> page to learn more.
-</p>
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Services</h2>
+                <p class="lead">Check out some of the great services we offer!</p>
+            </div>
 
-<p>
-  We are close to launching our new line of hacky sacks.  Check out this video below.  It's Ridic!
-</p>
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-code"></i>
+                            <h2>Web App Development</h2>
+                            <h3>Custom web apps for your needs.</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
 
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dn8c7ScavbU" height="20%"></iframe>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-</div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-desktop"></i>
+                            <h2>Custom Programs</h2>
+                            <h3>"Fluent in over 6 million forms of communication."</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
 
-<p class="large">
-  In the meantime, why not take a look at some of our other services?  Shoot us an <%= mail_to "info@itsridic.com", "email" %> if you're interested!
-</p>
-<div class="section" id="services">
-  <div class="row">
-    <div class="col-md-6">
-        <h2>Web Development</h2>
-        <ul>
-          <li>
-            <strong>Cheap!</strong> - Creating a custom website for your organization does not have to be expensive!
-          </li>
-          <li>
-            <strong>Responsive!</strong> - Your website will look good on any device: Desktops, Laptops, Tablets, and Mobile Phones.
-          </li>
-          <li><strong>Fast!</strong> - We can get a working prototype of your website up very quickly and then work together to make the final tweaks!</li>
-        </ul>
-    </div>
-    <div class="col-md-6">
-      <h2>Web Application Development</h2>
-      <p class="left">
-        <div>
-        Using the latest web technologies and frameworks, we can design and create custom, database driven web applications that work in any browser.
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-cogs"></i>
+                            <h2>Troubleshooting</h2>
+                            <h3>Something not working right?  Let us help.</h3>
+                        </div>
+                    </div><!--/.col-md-4-->            
+                </div><!--/.services-->
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+
+    <section id="services" class="service-item">
+     <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Products</h2>
+                <p class="lead">In addition to our awesome service we have some awesome products as well!  Stay tuned for more information!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">White Touch Screen Glove</h3>
+                            <h3 class="media-heading">Click picture to purchase</h2>
+                        </div>                    
+                        <div class="pull-left">
+                            <%= link_to image_tag('touchscreenglovewhite.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB7USA" %>
+                        </div>
+                        <div class="media-body pull-left">
+                            <ul>
+                                <li>Use phone while wearing gloves!</li>
+                                <li>Warm</li>
+                                <li>Washable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">Black Touch Screen Glove</h3>
+                            <h3 class="media-heading">Click picture to purchase</h2>
+                        </div>                    
+                        <div class="pull-left">
+                            <%= link_to image_tag('touchscreengloveblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB3TKI" %>
+                        </div>
+                        <div class="media-body pull-left">
+                            <ul>
+                                <li>Use phone while wearing gloves!</li>
+                                <li>Warm</li>
+                                <li>Washable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">2 Panel Hacky Sack</h3>
+                            <h3 class="media-heading">Coming Soon!</h2>
+                        </div>                    
+                        <div class="pull-left">
+                            <%= image_tag('hackytwopanelredback2.jpg', style: 'height: 200px;') %>
+                        </div>
+                        <div class="media-body pull-left">
+                            <ul>
+                                <li>Multiple Varities Available Soon</li>
+                                <li>Sand, Pellet, and Metal Filled</li>
+                                <li>Hand Sewn</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>                
+                                               
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    It's Ridic, LLC
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><%= link_to "Home", root_path %></li>
+                        <li><%= link_to "About Us", about_path %></li>
+                        <li><%= mail_to "info@itsridic.com", "Contact Us" %></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </p>
-    </div>
-  </div>
-</div>
+    </footer><!--/#footer-->
+</body>
+</html>
