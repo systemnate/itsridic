@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def signup
   end
+
+  def productreviews
+  end
 end
