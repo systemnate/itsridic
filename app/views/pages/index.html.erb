@@ -134,6 +134,58 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="media-body">
+                            <h3 class="media-heading" style="color: #787878;">Touch Screen Glove</h3>
+                            <h3 class="media-heading" style="color: #787878;">Click picture to purchase</h3>
+                        </div>                    
+                        <div class="center-block multi-color-glove" style="text-align:center;">
+                            <%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
+                        </div>
+                        <div class="center-block green-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
+                        </div>
+                        <div class="center-block yellow-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreengloveyellow.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5TFA" %>
+                        </div>
+                         <div class="center-block grey-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovegrey.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PCJMDY" %>
+                        </div>
+                         <div class="center-block navyblue-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovenavyblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5OJQ" %>
+                        </div>
+                         <div class="center-block offwhite-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreengloveoffwhite.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5W1Q" %>
+                        </div>
+                         <div class="center-block orange-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreengloveorange.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5RYS" %>
+                        </div>
+                         <div class="center-block pink-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovepink.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5TDW" %>
+                         </div>
+                         <div class="center-block red-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovered.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5UPE" %>
+                         </div>
+                         <div class="center-block sapphireblue-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreenglovesapphireblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
+                         </div>
+                        <span class="color-green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-navyblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-offwhite">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-pink">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-sapphireblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="color-yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <ul>
+                          <li>Warm</li>
+                          <li>Washable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="media-body">
                             <h3 class="media-heading" style="color: #787878;">Record Breaker Hacky Sack</h3>
                             <h3 class="media-heading" style="color: #787878;">Click picture to purchase</h3>
                         </div>                    
@@ -315,7 +367,7 @@
                             </ul>
                         </div>                        
                     </div>
-                </div>                                                                
+                </div>
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#services-->  
@@ -336,5 +388,116 @@
             </div>
         </div>
     </footer><!--/#footer-->
-</body>
-</html>
+    <script>
+      $('.color-green').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.yellow-glove').hide();
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide();
+        $('.green-glove').show();
+      });
+      $('.color-yellow').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').show();
+      });
+      $('.color-grey').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').show();
+      });
+      $('.color-navyblue').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').show();
+      });
+      $('.color-offwhite').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').show();
+      });
+      $('.color-orange').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').show();
+      });
+      $('.color-pink').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').show();
+      });
+      $('.color-red').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').show();
+      });
+      $('.color-sapphireblue').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').show();
+      });
+ 
+    </script>
+
