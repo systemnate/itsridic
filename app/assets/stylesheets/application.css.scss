@@ -129,47 +129,74 @@ li {
 }
 
 .color-green {
+  float: left;
   color: #126342;
-  background: #126342;
+  height: 25px;
+  width: 25px;
+  background-image: image-url('greenbox.png');
 }
 
 .color-grey {
+  float: left;
   color: #2C2C2E;
-  background: #2C2C2E;
+  height: 25px;
+  width: 25px;
+  background-image: image-url('greybox.png');
 }
 
 .color-navyblue {
+  float: left;
   color: #202044;
-  background: #202044;
+  height: 25px;
+  width: 25px;
+  background-image: image-url('navybluebox.png');
 }
 
 .color-offwhite {
+  float: left;
   color: #E7E3C8;
-  background: #E7E3C8;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('offwhitebox.png');
 }
 
 .color-orange {
+  float: left;
   color: #FA4B20;
-  background: #FA4B20;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('orangebox.png');
 }
 
 .color-pink {
+  float: left;
   color: #FA4298;
-  background: #FA4298;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('pinkbox.png');
 }
 
 .color-red {
+  float: left;
   color: #DE1774; 
-  background: #DE1774;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('redbox.png');
 }
 
 .color-sapphireblue {
+  float: left;
   color: #2B29B0;
-  background: #2B29B0;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('sapphirebluebox.png');
 }
 
 .color-yellow {
+  float: left;
   color: #F7DB4C; 
-  background: #F7DB4C;
+  height: 25px;
+  width: 25px;  
+  background-image: image-url('yellowbox.png');
 }
 
