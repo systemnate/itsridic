@@ -167,6 +167,10 @@
                          <div class="center-block sapphireblue-glove" style="text-align:center; display: none;">
                           <%= link_to image_tag('touchscreenglovesapphireblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
                          </div>
+                         <div class="center-block acidblue-glove" style="text-align:center; display: none;">
+                          <%= link_to image_tag('touchscreengloveacidblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
+                         </div>
+
                         <ol class="nonum" style="list-style-type: none;">
                           <li class="color-green" style="float: left;"><%= image_tag('greenbox.png') %></li>
                             <li class="color-grey" style="float: left;"><%= image_tag('greybox.png') %></li>
@@ -177,6 +181,7 @@
                             <li class="color-red" style="float: left;"><%= image_tag('redbox.png') %></li>
                             <li class="color-sapphireblue" style="float: left;"><%= image_tag('sapphirebluebox.png') %></li>
                             <li class="color-yellow" style="float: left;"><%= image_tag('yellowbox.png') %></li>
+                            <li class="color-acidblue" style="float: left;"><%= image_tag('acidbluebox.png') %></li>
                         </ol>
                         <br/>
                         <div style="float: left;">
@@ -357,17 +362,31 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="media-body">
-                            <h3 class="media-heading" style="color: #787878;">It's Ridic! Logo T-Shirt (Blue)</h3>
+                            <h3 class="media-heading" style="color: #787878;">It's Ridic! Logo T-Shirt</h3>
                             <h3 class="media-heading" style="color: #787878;">Click picture to purchase</h3>
                         </div>         
-                        <div class="center-block" style="text-align:center;">
+                        <div class="center-block blue-shirt" style="text-align:center;">
                             <%= link_to image_tag('itsridiclogoshirtblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/ITS-RIDIC-Blue-Logo-T-SHIRT/dp/B019NUSL30" %>
-                        </div>  
+                        </div> 
+                        <div class="center-block grey-shirt" style="text-align:center; display: none;">
+                          <%= link_to image_tag('itsridiclogoshirtgrey.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI3C2" %>
+                        </div>
+                        <div class="center-block green-shirt" style="text-align:center; display: none;">
+                          <%= link_to image_tag('itsridiclogoshirtgreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI0RK" %>
+                        </div>
+                        <div class="center-block black-shirt" style="text-align:center; display: none;">
+                          <%= link_to image_tag('itsridiclogoshirtblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PGSAG" %>
+                        </div>
+                        <ol class="nonum" style="list-style-type: none;">
+                          <li class="color-tshirtblue" style="float: left;"><%= image_tag('shirtbluebox.png') %></li>
+                          <li class="color-tshirtblack" style="float: left;"><%= image_tag('shirtblackbox.png') %></li>
+                          <li class="color-tshirtgrey" style="float: left;"><%= image_tag('shirtgreybox.png') %></li>
+                          <li class="color-tshirtgreen" style="float: left;"><%= image_tag('shirtgreenbox.png') %></li>
+                        </ol>
                         <div class="media-body pull-left">
                             <ul>
                                 <li>50% cotton, 50% polyester</li>
                                 <li>Double Needle Stitching</li>
-                                <li>It's Ridic!</li>
                             </ul>
                         </div>                        
                     </div>
@@ -404,6 +423,7 @@
         $('.red-glove').hide();
         $('.sapphireblue-glove').hide();
         $('.yellow-glove').hide();
+        $('.acidblue-glove').hide();
         $('.green-glove').show();
       });
       $('.color-yellow').mouseover(function() {
@@ -416,6 +436,7 @@
         $('.pink-glove').hide();
         $('.red-glove').hide();
         $('.sapphireblue-glove').hide();
+        $('.acidblue-glove').hide();
         $('.yellow-glove').show();
       });
       $('.color-grey').mouseover(function() {
@@ -428,6 +449,7 @@
         $('.red-glove').hide();
         $('.sapphireblue-glove').hide();
         $('.yellow-glove').hide(); 
+        $('.acidblue-glove').hide();
         $('.grey-glove').show();
       });
       $('.color-navyblue').mouseover(function() {
@@ -440,6 +462,7 @@
         $('.sapphireblue-glove').hide();
         $('.yellow-glove').hide(); 
         $('.grey-glove').hide();
+        $('.acidblue-glove').hide();
         $('.navyblue-glove').show();
       });
       $('.color-offwhite').mouseover(function() {
@@ -452,6 +475,7 @@
         $('.yellow-glove').hide(); 
         $('.grey-glove').hide();
         $('.navyblue-glove').hide();
+        $('.acidblue-glove').hide();
         $('.offwhite-glove').show();
       });
       $('.color-orange').mouseover(function() {
@@ -464,6 +488,7 @@
         $('.grey-glove').hide();
         $('.navyblue-glove').hide();
         $('.offwhite-glove').hide();
+        $('.acidblue-glove').hide();
         $('.orange-glove').show();
       });
       $('.color-pink').mouseover(function() {
@@ -476,6 +501,7 @@
         $('.navyblue-glove').hide();
         $('.offwhite-glove').hide();
         $('.orange-glove').hide();
+        $('.acidblue-glove').hide();
         $('.pink-glove').show();
       });
       $('.color-red').mouseover(function() {
@@ -488,6 +514,7 @@
         $('.offwhite-glove').hide();
         $('.orange-glove').hide();
         $('.pink-glove').hide();
+        $('.acidblue-glove').hide();
         $('.red-glove').show();
       });
       $('.color-sapphireblue').mouseover(function() {
@@ -500,8 +527,45 @@
         $('.orange-glove').hide();
         $('.pink-glove').hide();
         $('.red-glove').hide();
+        $('.acidblue-glove').hide();
         $('.sapphireblue-glove').show();
       });
- 
+      $('.color-acidblue').mouseover(function() {
+        $('.multi-color-glove').hide();
+        $('.green-glove').hide();
+        $('.yellow-glove').hide(); 
+        $('.grey-glove').hide();
+        $('.navyblue-glove').hide();
+        $('.offwhite-glove').hide();
+        $('.orange-glove').hide();
+        $('.pink-glove').hide();
+        $('.red-glove').hide();
+        $('.sapphireblue-glove').hide();
+        $('.acidblue-glove').show();
+      });
+      $('.color-tshirtblue').mouseover(function() {
+        $('.grey-shirt').hide();
+        $('.green-shirt').hide();
+        $('.black-shirt').hide();
+        $('.blue-shirt').show();
+      }); 
+      $('.color-tshirtgrey').mouseover(function() {
+        $('.blue-shirt').hide();
+        $('.green-shirt').hide();
+        $('.black-shirt').hide();
+        $('.grey-shirt').show();
+      }); 
+      $('.color-tshirtgreen').mouseover(function() {
+        $('.grey-shirt').hide();
+        $('.blue-shirt').hide();
+        $('.black-shirt').hide();
+        $('.green-shirt').show();
+      }); 
+      $('.color-tshirtblack').mouseover(function() {
+        $('.grey-shirt').hide();
+        $('.green-shirt').hide();
+        $('.blue-shirt').hide();
+        $('.black-shirt').show();
+      }); 
     </script>
 
