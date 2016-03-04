@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def productreviews
   end
+
+  def blog
+  end
 end
