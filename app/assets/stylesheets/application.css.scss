@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "main";
+@import 'slick';
+@import 'slick-theme';
 
 @font-face {
     font-family: 'Nervous';
@@ -238,3 +240,14 @@ li {
   border-radius: 6px;
 }
 
+.slick-prev::before, .slick-next::before {
+  color: #000;
+}
+
+.slick-next {
+  right: -1px;
+}
+
+.slick-prev {
+  left: -25px;
+}
