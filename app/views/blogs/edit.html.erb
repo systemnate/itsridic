@@ -1,3 +1,6 @@
 <h1 class="blog-title">Edit Blog</h1>
 
 <%= render partial: 'form' %>
+
+<%= link_to "All Blogs", blogs_path, class: "btn btn-primary" %> | 
+<%= link_to "Delete", blog_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-primary" %>
