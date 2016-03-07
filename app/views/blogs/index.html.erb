@@ -1,11 +1,24 @@
-<h1 style="color: #424242;">All Blogs</h1>
-<% @blogs.each do |blog| %>
-  <div class="blog">
-    <div class="blog-title"><%= link_to blog.title, blog %></div>
-    <div class="blog-body"><%= sanitize(strip_tags(blog.body)) %></div>
-  </div>
-<% end %>
-
-<% if user_signed_in? %>
-  <%= link_to "New Blog", new_blog_path, class: "btn btn-primary" %>  
-<% end %>
+<div class="container">
+  <h1 style="color: #424242;">All Blogs</h1>
+  <% @blogs.each do |blog| %>
+    <div class="blog">
+      <div class="row">
+        <div class="col-md-1">
+          <%= gravatar_for(blog.user) %>
+        </div>
+        <div class="col-md-11">
+          <div class="blog-title"><%= link_to "#{blog.title} (by #{blog.user.name} on #{blog.created_at.strftime("%m/%d/%Y")})", blog %></div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="blog-body"><%= sanitize(strip_tags(blog.body)) %></div>
+            </div>
+          </div>
+        </div> <!-- col-md-11 -->
+      </div> <!-- row -->
+    </div> <!-- blog -->
+  <% end %>
+  <% if user_signed_in? %>
+    <%= link_to "New Blog", new_blog_path, class: "btn btn-primary" %>  
+    <hr />
+  <% end %>
+</div>
