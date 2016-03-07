@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'products/index'
-  get '/blog', to: 'pages#blog'
   get 'pages/index'
   root 'pages#index'
   get '/about', to: 'pages#about'
@@ -17,4 +17,5 @@ Rails.application.routes.draw do
       match 'reviews',  via: [:get]
     end
   end
+  resources :blogs
 end

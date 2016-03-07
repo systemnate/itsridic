@@ -1,0 +1,14 @@
+<div>
+  <%= link_to "All Blogs", blogs_path, class: "btn btn-primary" %>
+</div>
+<% if user_signed_in? %>
+  <hr />
+  <div>
+    <%= link_to "Edit", edit_blog_path(@blog), class: "btn btn-success" %>
+  </div>
+<% end %>
+<div class="blog">
+  <h1 class="blog-title"><%= @blog.title %></h1>
+  <div class="blog-body"><%= @blog.body.html_safe %></div>
+</div>
+

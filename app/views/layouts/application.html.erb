@@ -10,9 +10,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="homepage">
+<% if controller.controller_name == 'blogs' %>
+  <body class="homepage" data-no-turbolink>
+<% else %>
+  <body class="homepage">
+<% end %>
   <%= render 'layouts/header' %>
-    <%= yield %>
+  <%= yield %>
   <%= render 'layouts/footer' %>
-</body>
+  </body>
 </html>

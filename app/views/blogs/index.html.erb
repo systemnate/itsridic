@@ -1,0 +1,11 @@
+<h1 style="color: #424242;">All Blogs</h1>
+<% @blogs.each do |blog| %>
+  <div class="blog">
+    <div class="blog-title"><%= link_to blog.title, blog %></div>
+    <div class="blog-body"><%= sanitize(strip_tags(blog.body)) %></div>
+  </div>
+<% end %>
+
+<% if user_signed_in? %>
+  <%= link_to "New Blog", new_blog_path, class: "btn btn-primary" %>  
+<% end %>
