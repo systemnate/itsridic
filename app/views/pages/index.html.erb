@@ -2,14 +2,21 @@
       <div class="carousel slide">
         <div class="carousel-inner">
           <div class="item active caro-image">
-            <%= link_to(
-              image_tag('RecordStallFeatured.jpg', class: "center-block img-responsive", style: "width: 85%;"),
-              "http://www.amazon.com/gp/product/B014QAEQRM/") %>
+            <% if @rand == 1 %>
+              <%= link_to(
+                image_tag('RecordStallFeatured.jpg', class: "center-block img-responsive", style: "width: 75%;"),
+                "http://www.amazon.com/gp/product/B014QAEQRM/") %>
+            <% elsif @rand == 2 %>
+              <%= link_to(
+                image_tag('RoundStallFeatured.jpg', class: "center-block img-responsive", style: "width: 75%;"),
+                "www.amazon.com/Its-Ridic-Filled-32-panel-Footbag/dp/B014QAM74Q") %>
+            <% end %>
         </div><!--/.item-->
         </div><!--/.carousel-inner-->
       </div><!--/.carousel-->
       <hr />
       <div class="container">
+        <h2 class="text-center">Swipe to view products</h2>
         <div class="slick-track slick-carousel">
           <div><%= link_to image_tag('touchscreenglovewhite.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB7USA" %></div>
           <div><%= link_to image_tag('touchscreengloveblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB3TKI" %></div>
