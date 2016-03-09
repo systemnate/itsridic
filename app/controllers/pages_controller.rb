@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @rand = rand(2) + 1
-    puts "*************#{@rand}"
+    @rand = rand(4) + 1
   end
 
   def about
