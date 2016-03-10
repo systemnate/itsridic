@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @rand = rand(4) + 1
+    @rand = rand(5) + 1
   end
 
   def about
