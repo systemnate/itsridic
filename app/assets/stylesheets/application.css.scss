@@ -270,6 +270,12 @@ li {
 
   .blog-body {
     font-size: 1.9rem;
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
+    p {
+      margin: 0;
+    }
   }
 }
 
