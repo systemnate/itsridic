@@ -19,7 +19,11 @@ module PagesHelper
     elsif @rand == 5 
       link_to(
         image_tag('RoundPopFeatured.jpg', class: "center-block img-responsive", style: "width: 75%;"),
-        "http://www.amazon.com/gp/product/B014QA5T2I/") 
-    end 
+        "http://www.amazon.com/gp/product/B014QA5T2I/")
+    elsif @rand == 6 
+      link_to(
+        image_tag('DriFitSocksFeatured.jpg', class: "center-block img-responsive", style: "width: 75%;"),
+        "http://www.amazon.com/RIDIC-Pack-Athletic-Socks-Large/dp/B017L087F6/")
+    end
   end
 end
