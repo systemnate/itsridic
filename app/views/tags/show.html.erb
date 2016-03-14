@@ -8,8 +8,8 @@
   <tbody>
     <% @tag.blogs.each do |blog| %>
       <tr>
-        <td><%= link_to blog.title, blog_path(blog) %></td>
-        <td><%= sanitize(strip_tags(blog.body)) %></td>
+        <td><%= link_to truncate(blog.title, length: 50, separator: " "), blog_path(blog) %></td>
+        <td><%= truncate(sanitize(strip_tags(blog.body)), length: 100, separator: " ") %></td>
       </tr>
     <% end %>
   </tbody>
