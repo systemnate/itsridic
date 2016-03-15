@@ -326,8 +326,7 @@ blockquote::before{
 }
 
 blockquote::after{
-  /*Reset to make sure*/
-  content: "\201D"; /*Unicode for Left Double Quote*/
+  content: "\201D"; /*Unicode for Right Double Quote*/
   
   /*Font*/
   font-family: Georgia, serif;
@@ -337,7 +336,6 @@ blockquote::after{
   
   /*Positioning*/
   position: absolute;
-	top: -5px;
 }
 
 blockquote a{
