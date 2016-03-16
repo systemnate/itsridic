@@ -19,4 +19,16 @@ class ProductsController < ApplicationController
 
   def reviews
   end
+
+  def black_touchscreen_glove
+  end
+
+  def white_touchscreen_glove
+  end
+
+  def colored_touchscreen_glove
+  end
+
+  def record_breaker
+  end
 end

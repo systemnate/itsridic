@@ -15,6 +15,10 @@ Rails.application.routes.draw do
       match 'decor',    via: [:get]
       match 'webapps',  via: [:get]
       match 'reviews',  via: [:get]
+      match 'black_touchscreen_glove', via: [:get]
+      match 'white_touchscreen_glove', via: [:get]
+      match 'colored_touchscreen_glove', via: [:get]
+      match 'record_breaker', via: [:get]
     end
   end
   resources :blogs

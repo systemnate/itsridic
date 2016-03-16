@@ -1,0 +1,58 @@
+<div class="container product-page" id="top">
+  <div class="title text-center">
+    <h1>Black Touchscreen Glove</h1>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-sm-4 product-image">
+      <%= image_tag('touchscreengloveblack.jpg', style: 'height: 300px;') %>
+    </div>
+
+    <div class="col-sm-8">
+      <h2>Stay warm while using your phone!</h2>
+      <ul>
+        <li>95% <%=link_to "Acrylic", "https://en.wikipedia.org/wiki/Acrylic_fiber" %></li>
+        <li>Works on all touchscreen devices (iPhone, Android, iPad, etc.)</li>
+        <li>One size fits most!</li>
+      </ul>
+      <%= link_to "Read more...", "#moreinfo" %>
+      <hr />
+      <div class="product-price">
+        <p>$8.49</p>
+      </div>
+      <%= link_to "Buy Now!", "http://www.amazon.com/gp/product/B015NB3TKI/", class: "btn btn-primary" %>
+    </div>
+  </div>
+  <hr />
+  <div class="center-block">
+    <h2 class="text-center">Product Review</h2>
+    <iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/JvfMlXghq_o" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-12 additional-information center-block">
+      <h2 class="text-center"><i class="fa fa-info-circle" id="moreinfo"></i></h2>
+      <h2 class="text-center">Additional Information</h2>
+      <p>
+        The It's Ridic! warm touchscreen / texting gloves make an excellent choice for those cold daily commutes or walks where
+        you want access to your phone.  They work great!
+      </p>
+      <h2 class="text-center"><i class="fa fa-support"></i></h2>
+      <h2 class="text-center">Care Instructions</h2>
+      <p>
+        These gloves are washable!  We recommend washing in cold water and air drying.  We have found putting them in the dryer
+        causes them to lose some of the touchscreen capability.
+      </p>
+      <h2 class="text-center"><i class="fa fa-question-circle"></i></h2>
+      <h2 class="text-center">More Questions?</h2>
+      <p>
+        Shoot us an <%= link_to "email", "mailto:info@itsridic.com" %> or check out the <%= link_to "Amazon product page", "http://www.amazon.com/gp/product/B015NB3TKI/" %> where some questions have already been answered.
+      </p>
+      <br />
+      <p class="text-center">
+        <%= link_to "<< Top >>", "#top" %>
+      </p>
+    </div>
+  </div>
+</div>
+
