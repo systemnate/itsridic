@@ -12,7 +12,7 @@ gem 'sprockets'
 gem 'jquery-slick-rails'
 gem 'devise'
 gem 'redcarpet'
-gem 'tinymce-rails'
+gem 'tinymce-rails', '~> 4.3', '>= 4.3.8'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly'
 
