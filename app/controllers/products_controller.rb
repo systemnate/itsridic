@@ -31,4 +31,13 @@ class ProductsController < ApplicationController
 
   def record_breaker
   end
+
+  def record_staller
+  end
+
+  def round_pop
+  end
+
+  def spiral
+  end
 end

@@ -19,6 +19,9 @@ Rails.application.routes.draw do
       match 'white_touchscreen_glove', via: [:get]
       match 'colored_touchscreen_glove', via: [:get]
       match 'record_breaker', via: [:get]
+      match 'record_staller', via: [:get]
+      match 'round_pop', via: [:get]
+      match 'spiral', via: [:get]
     end
   end
   resources :blogs
