@@ -43,4 +43,25 @@ class ProductsController < ApplicationController
   
   def round_stall
   end
+
+  def flashlight
+  end
+
+  def dog_leash
+  end
+
+  def itsridic_tshirt
+  end
+
+  def drifit_sock
+  end
+
+  def crystal_monkey
+  end
+
+  def headband
+  end
+
+  def led_dog_collar
+  end
 end

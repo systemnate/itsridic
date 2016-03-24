@@ -21,8 +21,14 @@ Rails.application.routes.draw do
       match 'record_breaker', via: [:get]
       match 'record_staller', via: [:get]
       match 'round_pop', via: [:get]
-      match 'spiral', via: [:get]
       match 'round_stall', via: [:get]
+      match 'spiral', via: [:get]
+      match 'flashlight', via: [:get]
+      match 'dog_leash', via: [:get]
+      match 'drifit_sock', via: [:get]
+      match 'crystal_monkey', via: [:get]
+      match 'headband', via: [:get]
+      match 'led_dog_collar', via: [:get]
     end
   end
   resources :blogs
