@@ -1,0 +1,58 @@
+<div class="container product-page" id="top">
+  <div class="title text-center">
+    <h1>Round Stall</h1>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-sm-4 product-image">
+      <%= image_tag('roundstall.jpg', class: "img-responsive") %>
+   </div>
+    <div class="col-sm-8">
+      <h2>Excellent Beginner Hack</h2>
+      <ul>
+        <li>32 Panel footbag (more panels = more round = more controlled hacks!)</li>
+        <li>Hand Stitched - very durable product</li>
+        <li>Sand Filled</li>
+      </ul>
+      <%= link_to "Read more...", "#moreinfo" %>
+      <hr />
+      <div class="product-price">
+        <p>$7.25</p>
+      </div>
+      <%= link_to "Buy Now!", "http://www.amazon.com/Its-Ridic-Filled-32-panel-Footbag/dp/B014QAM74Q/", class: "btn btn-primary" %>
+    </div>
+  </div>
+  <hr />
+  <div class="center-block">
+    <h2 class="text-center">Product Review</h2>
+		<h3 class="text-center">Coming Soon!</h3>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-12 additional-information center-block">
+      <h2 class="text-center"><i class="fa fa-info-circle" id="moreinfo"></i></h2>
+      <h2 class="text-center">Additional Information</h2>
+      <p>
+			  It's Ridic! offers the Round Stall–2015 32-panel hacky sack to help you get the hack in the air more times with good stall 
+        power. 32-panels creates a more round hack which leads to more linear and controlled kicks. Filling this hack with sand 
+        creates a more dense hack that allows for stalls. The hand stitching is superb and makes this hack very durable. We chose 
+        brighter colors to make it easy to see. Hope you enjoy the hack as much as we do!
+      </p>
+      <h2 class="text-center"><i class="fa fa-support"></i></h2>
+      <h2 class="text-center">Care Instructions</h2>
+      <p>
+        We recommend following <%= link_to "this video", "https://www.youtube.com/watch?v=Uxj_JfF4uQM" %> for washing instructions.
+      </p>
+      <h2 class="text-center"><i class="fa fa-question-circle"></i></h2>
+      <h2 class="text-center">More Questions?</h2>
+      <p>
+        Shoot us an <%= link_to "email", "mailto:info@itsridic.com" %> or check out the <%= link_to "Amazon product page", "http://www.amazon.com/Its-Ridic-Filled-32-panel-Footbag/dp/B014QAM74Q/" %> where some questions (may) have already been answered.
+      </p>
+      <br />
+      <p class="text-center">
+        <%= link_to "<< Top >>", "#top" %>
+      </p>
+    </div>
+  </div>
+</div>
+

@@ -40,4 +40,7 @@ class ProductsController < ApplicationController
 
   def spiral
   end
+  
+  def round_stall
+  end
 end

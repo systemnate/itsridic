@@ -22,6 +22,7 @@ Rails.application.routes.draw do
       match 'record_staller', via: [:get]
       match 'round_pop', via: [:get]
       match 'spiral', via: [:get]
+      match 'round_stall', via: [:get]
     end
   end
   resources :blogs
