@@ -1,0 +1,62 @@
+<div class="container product-page" id="top">
+  <div class="title text-center">
+    <h1>3-in-1 Retractable Dog Leash</h1>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-sm-4 product-image">
+      <%= image_tag('3in1leash.jpg', class: 'img-responsive') %>
+    </div>
+
+    <div class="col-sm-8">
+      <h2>Everything you need in a dog leash!</h2>
+      <ul>
+        <li>Bright Removable LED Flashlight</li>
+        <li>Removable and refillable waste disposal system</li>
+        <li>One click 16 foot retractable leash</li>
+      </ul>
+      <%= link_to "Read more...", "#moreinfo" %>
+      <hr />
+      <div class="product-price">
+        <p>$18.25</p>
+      </div>
+      <%= link_to "Buy Now!", "http://goo.gl/oRhgNm", class: "btn btn-primary" %>
+    </div>
+  </div>
+  <hr />
+  <div class="center-block">
+    <h2 class="text-center">Product Review</h2>
+    <iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/Ff3F7TfRahA" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-12 additional-information center-block">
+      <h2 class="text-center"><i class="fa fa-info-circle" id="moreinfo"></i></h2>
+      <h2 class="text-center">Additional Information</h2>
+      <p>
+				<ul>
+          <li>One button Brake and Safety Lock System</li>
+          <li>Detachable 9 piece LED flashlight- requires 3 AAA batteries - NOT included</li>
+          <li>Detachable Waste Bag Carrier - attachment is SOLID! No waste bags swaying back and forth!</li>
+          <li>Comes with 20 disposable bags</li>
+          <li>16 FT tangle-free leash cord with metal collar attachment</li>
+        </ul>
+      </p>
+      <h2 class="text-center"><i class="fa fa-support"></i></h2>
+      <h2 class="text-center">Care Instructions</h2>
+      <p>
+        When not using, store indoors in a dry place.
+      </p>
+      <h2 class="text-center"><i class="fa fa-question-circle"></i></h2>
+      <h2 class="text-center">More Questions?</h2>
+      <p>
+        Shoot us an <%= link_to "email", "mailto:info@itsridic.com" %> or check out the <%= link_to "Amazon product page", "http://goo.gl/oRhgNm" %> where some questions have already been answered.
+      </p>
+      <br />
+      <p class="text-center">
+        <%= link_to "<< Top >>", "#top" %>
+      </p>
+    </div>
+  </div>
+</div>
+
