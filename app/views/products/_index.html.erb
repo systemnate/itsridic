@@ -2,6 +2,9 @@
   <div class="container">
     <div class="center wow fadeInDown">
       <h2><%= yield(:title) %></h2>
+      <% if user_signed_in? %>
+        <%= link_to "New Product", new_product_path %>
+      <% end %>
       <p class="lead"><%= yield(:description) %></p>
     </div>
     <div class="row">
