@@ -1,0 +1,14 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :title %>
+  <%= f.input :heading %>
+  <%= f.input :bullet1 %>
+  <%= f.input :bullet2 %>
+  <%= f.input :bullet3 %>
+  <%= f.input :price %>
+  <%= f.input :amazon_url %>
+  <%= f.input :image, as: :file %>
+  <%= f.input :review_url %>
+  <%= f.input :additional_info %>
+  <%= f.input :care_instructions %>
+  <%= f.button :submit %>
+<% end %>

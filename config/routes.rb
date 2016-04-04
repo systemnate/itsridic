@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/signup', to: 'pages#signup'
   get '/productreviews', to: 'pages#productreviews'
   resources :services, only: [:index]
-  resources :products, only: [:index] do
+  resources :products do
     collection do
       match 'clothing', via: [:get]
       match 'outdoor',  via: [:get]

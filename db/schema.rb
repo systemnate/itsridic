@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307165335) do
+ActiveRecord::Schema.define(version: 20160404164639) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +22,28 @@ ActiveRecord::Schema.define(version: 20160307165335) do
   end
 
   add_index "blogs", ["user_id"], name: "index_blogs_on_user_id"
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.string   "heading"
+    t.string   "bullet1"
+    t.string   "bullet2"
+    t.string   "bullet3"
+    t.decimal  "price"
+    t.string   "amazon_url"
+    t.string   "image_url"
+    t.string   "review_url"
+    t.string   "additional_info"
+    t.string   "care_instructions"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.boolean  "render_show"
+    t.string   "category"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"

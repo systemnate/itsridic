@@ -1,20 +1,45 @@
 class ProductsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :edit, :update, :create, :destroy]
+
   def index
+		@products = Product.all
+  end
+
+  def new
+    @product = Product.new
+  end
+
+  def create
+    @product = Product.new(product_params)
+    if @product.save
+      redirect_to @product
+    else
+      render :new
+    end
+  end
+
+  def show
+    @product = Product.find(params[:id])
   end
 
   def clothing
+		@products = Product.where(category: "clothing")
   end
 
   def outdoor
+    @products = Product.where(category: "outdoor")
   end
 
   def tools
+    @products = Product.where(category: "tools")
   end
 
   def decor
+    @products = Product.where(category: "decor")
   end
 
   def webapps
+    @products = Product.where(category: "webapps")
   end
 
   def reviews
@@ -63,5 +88,11 @@ class ProductsController < ApplicationController
   end
 
   def led_dog_collar
+  end
+
+  private
+
+  def product_params
+    params.require(:product).permit(:title, :heading, :bullet1, :bullet2, :bullet3, :price, :amazon_url, :image_url, :additional_info, :care_instructions, :image)
   end
 end

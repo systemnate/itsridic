@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -15,6 +15,10 @@ gem 'redcarpet'
 gem 'tinymce-rails', '~> 4.3', '>= 4.3.8'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly'
+gem 'simple_form'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'aws-sdk', '< 2.0'
+gem 'dotenv-rails', '~> 2.1'
 
 group :development, :test do
   gem 'byebug'
