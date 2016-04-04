@@ -1,6 +1,9 @@
 <div class="container product-page" id="top">
   <div class="title text-center">
-    <h1><%= @product.title %></h1>
+    <h1 style="color: black;"><%= @product.title %></h1>
+    <% if user_signed_in? %>
+      <%= link_to "Edit", edit_product_path(@product) %>
+    <% end %>
     <hr />
   </div>
   <div class="row">
@@ -26,7 +29,7 @@
   <hr />
   <div class="center-block">
     <h2 class="text-center">Product Review</h2>
-    <% if @product.review_url %>
+    <% if @product.review_url.empty? %>
       <iframe class="center-block" width="420" height="315" src="<%= @product.review_url %>" frameborder="0" allowfullscreen></iframe>
     <% else %>
       <h2 class="text-center">Coming Soon!</h2>
