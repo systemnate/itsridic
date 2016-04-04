@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :edit, :update, :create, :destroy]
 
   def index
-		@products = Product.all
+    @products = Product.order("id")
   end
 
   def new
