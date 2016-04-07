@@ -11,6 +11,7 @@ class PriceUpdater
     )
     Product.all.each do |product|
       unless product.sku.blank?
+        puts "SKU=#{sku}"
         sku = product.sku
         product.price = item.get_my_price_for_sku(sku).xml['GetMyPriceForSKUResponse']['GetMyPriceForSKUResult']['Product']['Offers']['Offer']['BuyingPrice']['LandedPrice']['Amount'].to_f
         product.save
