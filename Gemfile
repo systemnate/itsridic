@@ -19,6 +19,7 @@ gem 'simple_form'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'aws-sdk', '< 2.0'
 gem 'dotenv-rails', '~> 2.1'
+gem 'peddler'
 
 group :development, :test do
   gem 'byebug'
