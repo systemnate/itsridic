@@ -1,23 +1,25 @@
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    It's Ridic, LLC
-                </div>
-                <div class="col-sm-3">
-                  <% if user_signed_in? %>
-                    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-                  <% else %>
-                    <%= link_to "Sign in", new_user_session_path %>
-                  <% end %>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><%= link_to "Home", root_path %></li>
-                        <li><%= link_to "About Us", about_path %></li>
-                        <li><%= mail_to "info@itsridic.com", "Contact Us" %></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer><!--/#footer-->
+<footer id="footer" class="midnight-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        It's Ridic, LLC<br/>
+        601 S. 3rd St.<br/>
+        Knoxville, IA 50138<br/>
+      </div>
+      <div class="col-sm-3">
+        <% if user_signed_in? %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path %>
+        <% end %>
+      </div>
+      <div class="col-sm-6">
+        <ul class="pull-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About Us", about_path %></li>
+          <li><%= mail_to "info@itsridic.com", "Contact Us" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer><!--/#footer-->
