@@ -26,4 +26,12 @@ module PagesHelper
         "http://www.amazon.com/RIDIC-Pack-Athletic-Socks-Large/dp/B017L087F6/")
     end
   end
+
+  def show_image(product)
+    if product.image_url
+      product.image_url
+    else
+      product.image_file_name
+    end
+  end
 end

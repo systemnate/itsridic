@@ -11,7 +11,7 @@
     <h2 class="text-center">Swipe to view products</h2>
     <div class="slick-track slick-carousel">
       <% Product.all.each do |product| %>
-         <div><%= link_to image_tag(product.image_url, style: 'height: 200px;'), product.amazon_url %></div>
+         <div><%= link_to image_tag(show_image(product), style: 'height: 200px;'), product.amazon_url %></div>
       <% end %>
     </div>
   </div>
