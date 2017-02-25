@@ -31,7 +31,7 @@ module PagesHelper
     if product.image_url
       product.image_url
     else
-      product.image_file_name
+      product.image.url
     end
   end
 end
