@@ -2,7 +2,7 @@
   <div class="carousel slide">
     <div class="carousel-inner">
       <div class="item active caro-image">
-        <iframe class="center-block" src="http://www.youtube.com/embed/eM3qX-S0Rm0" height="500" width="90%" style="margin-top: 2%" allowfullscreen></iframe>
+        <%= link_to image_tag('AllChokers1.JPG'), "https://goo.gl/Qejy3O" %>
       </div><!--/.item-->
     </div><!--/.carousel-inner-->
   </div><!--/.carousel-->
@@ -10,26 +10,9 @@
   <div class="container">
     <h2 class="text-center">Swipe to view products</h2>
     <div class="slick-track slick-carousel">
-      <div><%= link_to image_tag('touchscreenglovewhite.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB7USA" %></div>
-      <div><%= link_to image_tag('touchscreengloveblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B015NB3TKI" %></div>
-      <div><%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %></div>
-      <div><%= link_to image_tag('recordbreaker.jpg', style: 'height: 200px;'), "http://www.amazon.com/Its-Ridic-Record-breaker-2015-2-panel-Footbag/dp/B013TN92MQ" %></div>
-      <div><%= link_to image_tag('recordstaller.jpg', style: 'height: 200px;'), "http://www.amazon.com/Its-Ridic-Record-2-panel-Footbag/dp/B014QAEQRM" %></div>
-      <div><%= link_to image_tag('roundpop.jpg', style: 'height: 200px;'), "http://www.amazon.com/Its-Ridic-Round-Pop-2-panel/dp/B014QA5T2I" %></div>
-      <div><%= link_to image_tag('spiral.jpg', style: 'height: 200px;'), "http://www.amazon.com/Its-Ridic-Spiral-2015-32-panel-Footbag/dp/B013RU0OI2" %></div>
-      <div><%= link_to image_tag('roundstall.jpg', style: 'height: 200px;'), "http://www.amazon.com/Its-Ridic-Round-Stall-2015-32-panel/dp/B014QAM74Q" %></div>
-      <div><%= link_to image_tag('redflashlight.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B017O0GA16" %></div>
-      <div><%= link_to image_tag('3in1leash.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019CTR64M" %></div>
-      <div><%= link_to image_tag('blackflashlight.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B017O0QZT8" %></div>
-      <div><%= link_to image_tag('blueflashlight.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B017O0QYTY" %></div>
-      <div><%= link_to image_tag('silverflashlight.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B017O13ED2" %></div>
-      <div><%= link_to image_tag('itsridiclogoshirtblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/ITS-RIDIC-Blue-Logo-T-SHIRT/dp/B019NUSL30" %></div>
-      <div><%= link_to image_tag('itsridiclogoshirtgrey.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI3C2" %></div>
-      <div><%= link_to image_tag('itsridiclogoshirtgreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI0RK" %></div>
-      <div><%= link_to image_tag('itsridiclogoshirtblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PGSAG" %></div>
-      <div><%= link_to image_tag('itsridicsock.jpg', style: 'height: 200px;'), "http://www.amazon.com/RIDIC-Pack-Athletic-Socks-Small/dp/B017L086A2" %></div>
-      <div><%= link_to image_tag('crystalmonkey.jpg', style: 'height: 200px;'), "http://www.amazon.com/RIDIC-Green-Crystal-Monkey-Figurine/dp/B01AX3TKZY" %></div>
-
+      <% Product.all.each do |product| %>
+         <div><%= link_to image_tag(product.image_url, style: 'height: 200px;'), product.amazon_url %></div>
+      <% end %>
     </div>
   </div>
 </section><!--/#main-slider-->
