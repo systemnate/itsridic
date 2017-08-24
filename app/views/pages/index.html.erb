@@ -2,7 +2,7 @@
   <div class="carousel slide">
     <div class="carousel-inner">
       <div class="item active caro-image">
-        <%= link_to image_tag('webbanner.png', width: '100%'), "https://goo.gl/Qejy3O" %>
+        <%= link_to image_tag('Bannerblack.png', width: '100%'), "https://goo.gl/Qejy3O" %>
       </div><!--/.item-->
     </div><!--/.carousel-inner-->
   </div><!--/.carousel-->
@@ -11,7 +11,7 @@
     <h2 class="text-center">Swipe to view products</h2>
     <div class="slick-track slick-carousel">
       <% Product.all.each do |product| %>
-         <div><%= link_to image_tag(show_image(product), style: 'height: 200px;'), product.amazon_url %></div>
+         <div><%= link_to image_tag(show_image(product), style: 'height: 200px;'), product.amazon_url %></div>http://localhost:3000/
       <% end %>
     </div>
   </div>
