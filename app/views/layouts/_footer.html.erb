@@ -1,38 +1,53 @@
 <footer id="footer" class="midnight-blue">
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-md-3 footer-text">
+        <h4>SHOP</h4>
+           <div><%= link_to "All Products",  products_path %></div>
+           <div> <%= link_to "Apparel", clothing_products_path %></div>
+           <div><%= link_to "Outdoor / Recreation", outdoor_products_path %></div>
+           <div><%= link_to "Tools", tools_products_path %></div>
+           <div><%= link_to "Decor", decor_products_path %></div>
+           <div><%= link_to "Services", services_path %></div>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-text">
+        <h4>ABOUT</h4>
+        <div><%= link_to "Company", about_path %></div>
+        <div><%= link_to "Management Team", about_path %></div>
+        <div><%= link_to "Product Information", productreviews_path %></div> 
+        <div><%= link_to "Blog", blogs_path %></div> 
+      </div>
+      <div class="col-md-3 footer-text">
+        <h4>CUSTOMER SERVICE</h4>
+        <div><%= mail_to "info@itsridic.com", "Contact" %></div>
+        Ship To Address:<br/>
         It's Ridic, LLC<br/>
         601 S. 3rd St.<br/>
-        Knoxville, IA 50138<br/>
+        Knoxville, IA 50138<br/> 
+        <br/>  
       </div>
-      <div class="col-sm-2">
+      <div class="col-md-3 footer-text">
+        <h4>FOLLOW IT'S RIDIC!</h4>
+        <br/>
+          <div class="social">
+            <ul class="social-share">
+              <li><a href="https://www.facebook.com/itsridic"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/its_ridic"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/10165698"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://instagram.com/itsridic/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.pinterest.com/itsridic/"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCHOl74QVkkQ_jtH1-4jtnHw"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <br/>
+        <br/>
         <% if user_signed_in? %>
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "Sign in", new_user_session_path %>
-        <% end %>
+        <% end %> 
       </div>
-      <div class="col-sm-6">
-        <ul class="pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About Us", about_path %></li>
-          <li><%= link_to "Blog", blogs_path %></li>
-          <li><%= mail_to "info@itsridic.com", "Contact Us" %></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-xs-8">
-    <div class="social">
-      <ul class="social-share">
-          <li><a href="https://www.facebook.com/itsridic"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/its_ridic"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/10165698"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://instagram.com/itsridic/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://www.pinterest.com/itsridic/"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCHOl74QVkkQ_jtH1-4jtnHw"><i class="fa fa-youtube"></i></a></li>
-      </ul>
-    </div>
+    </div>           
   </div>
 </footer><!--/#footer-->

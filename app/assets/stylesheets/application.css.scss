@@ -1,9 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "slick";
+@import "slick-theme";
+@import "products";
 @import "main";
-@import 'slick';
-@import 'slick-theme';
-@import 'products';
 
 @font-face {
     font-family: 'Nervous';
