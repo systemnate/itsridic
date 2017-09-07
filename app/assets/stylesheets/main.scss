@@ -2575,3 +2575,9 @@ shortcodes page css
 .navbar .navbar-collapse {
   text-align: center;
 }
+.specialeffects:hover,
+.specialeffects:focus {
+  color: #000099;
+  outline: none;
+  box-shadow: none;
+}
