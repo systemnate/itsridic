@@ -10,9 +10,9 @@
     <div class="row">
 			<% @products.each do |product| %>
 				<div class="col-sm-6 col-md-4 <%= product.category %>">
-					<div class="media services-wrap wow fadeInDown">                   
+					<div class="media services-wrap wow fadeInDown" style="height:245px;">                   
 						<div class="center-block" style="text-align:center;">
-							<%= link_to image_tag(product.image.url, style: 'height: 130px;'), product.amazon_url %>
+							<%= link_to image_tag(product.image.url, style: 'height: 200px;'), product.amazon_url %>
 						</div>
               <h7 style="color:000099;"><%= link_to product.title, product.image.url %> </h7> 
               <h8><%= link_to "More Product Info", product %></h8>      
@@ -20,39 +20,39 @@
 				</div>
       <% end %>
 		<div class="col-sm-6 col-md-4 clothing multigloves">
-			<div class="media services-wrap wow fadeInDown">                   
+			<div class="media services-wrap wow fadeInDown" style="height:245px;">                   
 				<div class="center-block multi-color-glove" style="text-align:center;">
-					<%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
+					<%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
 				</div>
 				<div class="center-block green-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
+					<%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
 				</div>
 				<div class="center-block yellow-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreengloveyellow.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5TFA" %>
+					<%= link_to image_tag('touchscreengloveyellow.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5TFA" %>
 				</div>
 				<div class="center-block grey-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovegrey.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PCJMDY" %>
+					<%= link_to image_tag('touchscreenglovegrey.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PCJMDY" %>
 				</div>
 				<div class="center-block navyblue-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovenavyblue.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5OJQ" %>
+					<%= link_to image_tag('touchscreenglovenavyblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5OJQ" %>
 				</div>
 				<div class="center-block offwhite-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreengloveoffwhite.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5W1Q" %>
+					<%= link_to image_tag('touchscreengloveoffwhite.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5W1Q" %>
 				</div>
 				<div class="center-block orange-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreengloveorange.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5RYS" %>
+					<%= link_to image_tag('touchscreengloveorange.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5RYS" %>
 				</div>
 				<div class="center-block pink-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovepink.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5TDW" %>
+					<%= link_to image_tag('touchscreenglovepink.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5TDW" %>
 				</div>
 				<div class="center-block red-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovered.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5UPE" %>
+					<%= link_to image_tag('touchscreenglovered.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5UPE" %>
 				</div>
 				<div class="center-block sapphireblue-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreenglovesapphireblue.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
+					<%= link_to image_tag('touchscreenglovesapphireblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
 				</div>
 				<div class="center-block acidblue-glove" style="text-align:center; display: none;">
-					<%= link_to image_tag('touchscreengloveacidblue.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
+					<%= link_to image_tag('touchscreengloveacidblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5PWC" %>
 				</div>
                 <div class="media-body">
           <h3 class="media-heading" style="color: #787878;"><%= link_to "Touch Screen Glove", colored_touchscreen_glove_products_path %></h3>
@@ -78,21 +78,21 @@
 			</div>
 		</div>
       <div class="col-sm-6 col-md-4 clothing">
-        <div class="media services-wrap wow fadeInDown">
+        <div class="media services-wrap wow fadeInDown" style="height:245px;">
           <div class="media-body">
             <h3 class="media-heading" style="color: #787878;">It's Ridic! Logo T-Shirt</h3>
           </div>         
           <div class="center-block blue-shirt" style="text-align:center;">
-            <%= link_to image_tag('itsridiclogoshirtblue.jpg', style: 'height: 130px;'), "http://www.amazon.com/ITS-RIDIC-Blue-Logo-T-SHIRT/dp/B019NUSL30" %>
+            <%= link_to image_tag('itsridiclogoshirtblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/ITS-RIDIC-Blue-Logo-T-SHIRT/dp/B019NUSL30" %>
           </div> 
           <div class="center-block grey-shirt" style="text-align:center; display: none;">
-            <%= link_to image_tag('itsridiclogoshirtgrey.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B0195PI3C2" %>
+            <%= link_to image_tag('itsridiclogoshirtgrey.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI3C2" %>
           </div>
           <div class="center-block green-shirt" style="text-align:center; display: none;">
-            <%= link_to image_tag('itsridiclogoshirtgreen.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B0195PI0RK" %>
+            <%= link_to image_tag('itsridiclogoshirtgreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PI0RK" %>
           </div>
           <div class="center-block black-shirt" style="text-align:center; display: none;">
-            <%= link_to image_tag('itsridiclogoshirtblack.jpg', style: 'height: 130px;'), "http://www.amazon.com/dp/B0195PGSAG" %>
+            <%= link_to image_tag('itsridiclogoshirtblack.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B0195PGSAG" %>
           </div>
           <ol class="nonum" style="list-style-type: none;">
             <li class="color-tshirtblue" style="float: left;"><%= image_tag('shirtbluebox.png') %></li>
