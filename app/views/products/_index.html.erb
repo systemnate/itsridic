@@ -10,7 +10,7 @@
     <div class="row">
 			<% @products.each do |product| %>
 				<div class="col-sm-6 col-md-4 <%= product.category %>">
-					<div class="media services-wrap wow fadeInDown" style="height:300px;">                   
+					<div class="media services-wrap wow fadeInDown" style="height:365px;">                   
 						<div class="center-block" style="text-align:center;">
 							<%= link_to image_tag(product.image.url, style: 'height: 200px;'), product.amazon_url %>
 						</div>
@@ -20,7 +20,7 @@
 				</div>
       <% end %>
 		<div class="col-sm-6 col-md-4 clothing multigloves">
-			<div class="media services-wrap wow fadeInDown" style="height:300px;">                   
+			<div class="media services-wrap wow fadeInDown" style="height:365px;">                   
 				<div class="center-block multi-color-glove" style="text-align:center;">
 					<%= link_to image_tag('touchscreenglovegreen.jpg', style: 'height: 200px;'), "http://www.amazon.com/dp/B019PG5S5G" %>
 				</div>
@@ -78,10 +78,7 @@
 			</div>
 		</div>
       <div class="col-sm-6 col-md-4 clothing">
-        <div class="media services-wrap wow fadeInDown" style="height:300px;">
-          <div class="media-body">
-            <h3 class="media-heading" style="color: #787878;">It's Ridic! Logo T-Shirt</h3>
-          </div>         
+        <div class="media services-wrap wow fadeInDown" style="height:365px;">         
           <div class="center-block blue-shirt" style="text-align:center;">
             <%= link_to image_tag('itsridiclogoshirtblue.jpg', style: 'height: 200px;'), "http://www.amazon.com/ITS-RIDIC-Blue-Logo-T-SHIRT/dp/B019NUSL30" %>
           </div> 
@@ -100,12 +97,9 @@
             <li class="color-tshirtgrey" style="float: left;"><%= image_tag('shirtgreybox.png') %></li>
             <li class="color-tshirtgreen" style="float: left;"><%= image_tag('shirtgreenbox.png') %></li>
           </ol>
-          <div class="media-body pull-left">
-            <ul>
-              <li>50% cotton, 50% polyester</li>
-              <li>Double Needle Stitching</li>
-            </ul>
-          </div>                        
+          <div class="media-body">
+            <h3 class="media-heading" style="color: #787878;">It's Ridic! Logo T-Shirt</h3>
+          </div>                       
         </div>
       </div>
 		</div><!--/.row-->
