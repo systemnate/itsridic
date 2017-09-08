@@ -5,8 +5,7 @@
       <%= link_to "Edit", edit_product_path(@product) %>
     <% end %>
     <hr />
-  </div>
-   <hr /> 
+  </div> 
   <div class="row">
     <div class="col-sm-4 product-image center-block">
       <%= image_tag(@product.image.url(:large), class: 'img-responsive') %>   
@@ -34,7 +33,7 @@
     <% unless @product.review_url.blank? %>
       <iframe class="center-block" width="420" height="315" src="<%= @product.review_url %>" frameborder="0" allowfullscreen></iframe>
     <% else %>
-      <h2 class="text-center">Coming Soon!</h2>
+      <h2 style = "font-size: 14px;">Coming Soon!</h2>
     <% end %>
     </div>
     <div class="col-sm-4 additional-information center-block">
