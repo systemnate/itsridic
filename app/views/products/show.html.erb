@@ -6,6 +6,7 @@
     <% end %>
     <hr />
   </div>
+   <hr /> 
   <div class="row">
     <div class="col-sm-4 product-image center-block">
       <%= image_tag(@product.image.url(:large), class: 'img-responsive') %>   
@@ -22,7 +23,7 @@
       <%= link_to 'Purchase for ' +number_to_currency(@product.price) + ' on Amazon!', @product.amazon_url, class: "btn btn-primary" %>
       </div>    
   </div>
-
+  <hr />
   <div class="row">
     <div class="col-sm-3 additional-information center-block">
       <h2 class="text-center" style = "font-size: 14px;" style = "color: #000000;"><i class="fa fa-support" style = "color: #000000;"></i>Care Instructions</h2>
