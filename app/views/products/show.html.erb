@@ -7,19 +7,18 @@
     <hr />
   </div>
   <div class="row">
-    <div class="col-sm-4 product-image">
-      <%= image_tag(@product.image.url(:large), class: 'img-responsive') %>
+    <div class="col-sm-4 product-image center-block">
+      <%= image_tag(@product.image.url(:large), class: 'img-responsive') %>   
     </div>
     <div class="col-sm-5">
-      <h2><%= @product.heading %></h2>
+      <h2 class="text-center"><%= @product.heading %></h2>
       <ul>
         <li><%= @product.bullet1 %></li>
         <li><%= @product.bullet2 %></li>
         <li><%= @product.bullet3 %></li>
       </ul>
-      <hr />
     </div>
-    <div class="col-sm-3" product-price">   
+    <div class="col-sm-3 product-price center-block">   
       <%= link_to 'Purchase for ' +number_to_currency(@product.price) + ' on Amazon!', @product.amazon_url, class: "btn btn-primary" %>
       </div>    
   </div>
