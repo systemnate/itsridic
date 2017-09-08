@@ -7,15 +7,15 @@
     <hr />
   </div> 
   <div class="row">
-    <div class="col-sm-4 product-image center-block">
+    <div class="col-sm-3 product-image center-block">
       <%= image_tag(@product.image.url(:large), class: 'img-responsive') %>   
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-6">
       <h2 class="text-center"><%= @product.heading %></h2>
-      <ul>
-        <li><%= @product.bullet1 %></li>
-        <li><%= @product.bullet2 %></li>
-        <li><%= @product.bullet3 %></li>
+      <ul class="text-center">
+        <li class="text-center"><%= @product.bullet1 %></li>
+        <li class="text-center"><%= @product.bullet2 %></li>
+        <li class="text-center"><%= @product.bullet3 %></li>
       </ul>
     </div>
     <div class="col-sm-3 product-price center-block">   
@@ -26,26 +26,26 @@
   <div class="row">
     <div class="col-sm-3 additional-information center-block">
       <h2 class="text-center" style = "font-size: 14px;" style = "color: #000000;"><i class="fa fa-support" style = "color: #000000;"></i>Care Instructions</h2>
-      <p style = "font-size: 17px;"><%= raw(@product.care_instructions) %></p>
+      <p class="text-center" style = "font-size: 17px;"><%= raw(@product.care_instructions) %></p>
     </div>
     <div class="col-sm-5 additional-information center-block"> 
     <h2 class="text-center" style = "font-size: 14px;" style = "color: #000000;"><i class="fa fa-info-circle" id="moreinfo" style = "color: #000000;" ></i>Product Demonstration</h2>
     <% unless @product.review_url.blank? %>
       <iframe class="center-block" width="420" height="315" src="<%= @product.review_url %>" frameborder="0" allowfullscreen></iframe>
     <% else %>
-      <h2 style = "font-size: 14px;">Coming Soon!</h2>
+      <h2 class="text-center" style = "font-size: 14px;">Coming Soon!</h2>
     <% end %>
     </div>
     <div class="col-sm-4 additional-information center-block">
       <h2 class="text-center" style = "font-size: 14px;" style = "color: #000000;"><i class="fa fa-info-circle" id="moreinfo" style = "color: #000000;" ></i>Additional Information</h2>
-      <p style = "font-size: 17px;"><%= raw(@product.additional_info) %></p>
+      <p class="text-center" style = "font-size: 17px;"><%= raw(@product.additional_info) %></p>
     </div>
   </div>
   <hr />
   <div class="row">
     <div class="col-sm-12 additional-information center-block">      
       <h2 class="text-center" style = "font-size: 20px;" style = "color: #000000;" ><i class="fa fa-question-circle" style = "color: #000000;" style =  ></i>More Questions?</h2>   
-      <p style = "font-size: 17px;">
+      <p class="text-center" style = "font-size: 17px;">
         Want to buy this item in bulk with better pricing?  Have more questions?  Send our team an <%= link_to "email by clicking on this link", "mailto:info@itsridic.com" %> or click on <%= link_to "this link for the Amazon product page", @product.amazon_url %> where questions from multiple customers have been addressed.
       </p>
       <br />
