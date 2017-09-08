@@ -12,13 +12,13 @@
 				<div class="col-sm-6 col-md-4 <%= product.category %>">
 					<div class="media services-wrap wow fadeInDown" style="height:365px;">                   
 						<div class="center-block" style="text-align:center;">
-							<%= link_to image_tag(product.image.url, style: 'height: 200px;'), product.amazon_url %>
+							<%= link_to image_tag(product.image.url, style: 'height: 200px;'), product.amazon_url, class: 'specialeffects'  %>
 						</div>
-              <h7><%= link_to product.title, product.amazon_url, class: 'specialeffects' %> </h7> 
+              <h7><%=product.title %> </h7> 
             <div class="product-price">
-            <h9><%= number_to_currency(product.price) %></h0>
+            <h9><%= link_to number_to_currency(product.price) + ' on Amazon today!',product.amazon_url, class: 'specialeffectsh9' %> </h9> 
            </div>
-              <h8><%= link_to "More Product Info", product, class: 'specialeffects' %></h8>      
+              <h8><%= link_to "More Product Info", product, class: 'specialeffectsh8'  %></h8>      
 					</div>
 				</div>
       <% end %>

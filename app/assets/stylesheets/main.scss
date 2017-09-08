@@ -20,6 +20,7 @@ h5,
 h6,
 h9 {
   font-weight: 600; 
+  
   font-family: 'Open Sans', sans-serif;
   color:#4e4e4e;
 }
@@ -46,7 +47,7 @@ h4{
 
 h7{
   font-size: 16px;
-  color: #000088;
+  color: #000000;
   font-weight: 400;
   line-height: 24px;
   display: block;
@@ -65,7 +66,7 @@ h9{
   color: #52538f;
   font-weight: 400;
   line-height: 24px;
-  display: block;
+  display: inline-block;
 }
 
 a {
@@ -2586,14 +2587,34 @@ shortcodes page css
 }
 .specialeffects {
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 .specialeffects:hover,
 .specialeffects:focus {
   color: blue;
   outline: none;
   box-shadow: none;
+  font-family: 'Open Sans', sans-serif;
 }
-
-.row > h8 {
+.specialeffectsh8 {
   color: #424242;
+  font-family: 'Open Sans', sans-serif;
+}
+.specialeffectsh8:hover,
+.specialeffectsh8:focus {
+  color: #000099;
+  outline: none;
+  box-shadow: none;
+  font-family: "Kraash";
+}
+.specialeffectsh9 {
+  color: #31914c;
+  font-family: 'Open Sans', sans-serif;
+}
+.specialeffectsh9:hover,
+.specialeffectsh9:focus {
+  color: #a61b2e;
+  outline: none;
+  box-shadow: none;
+  font-family: 'Open Sans', sans-serif;
 }
